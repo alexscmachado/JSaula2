@@ -59,11 +59,26 @@ switch (usuario) {
 
         }
 
-        alert (" Vagas disponíveis: 1 - Telemarketing  2 - Recepcionista  3 - Estoquista   4 - Técnico de informática")
+        alert (" Vagas disponíveis: 0 - Telemarketing  | 1 - Recepcionista | 2 - Estoquista  | 3 - Técnico de informática")
         
-        let vaga = prompt (" Digite o número correspondente a função que deseja se candidatar:")
+      let vaga =  prompt (" Digite o número correspondente a função que deseja se candidatar:")
 
-        for (let i = vaga ; i > 0 ; i = i++ );
+      let profissao = ["telemarketing","Recepcionista", "Estoquista", "Téc. de Informática"]
+
+        for (let i = vaga  ; i < profissao.length ; i = i++ ){
+
+            let key = profissao[i]
+
+            let escolha =  key
+                    
+            alert ( " Você escolheu concorrer a uma vaga de" + " "+ escolha)
+
+            break
+        }
+
+       alert ( "Cadastro concluído. Agora é só aguardar que entraremos em contato. Obrigado !")
+
+       break
    
     default:
         alert("Recarregue a página e comece novamente.")
@@ -78,17 +93,3 @@ switch (usuario) {
 
 
 
-
-
-
-if (idade < 18) {
-
-    alert("Você é menor de idade, precisa da altorização de seus pais para continuar!");
-} else if (idade >= 30) {
-    alert("Vocês está em uma idade boa.")
-}
-else {
-    alert("Sua idade é: " + " " + idade + " " + "anos");
-}
-
-alert("Obrigado pela participação!");
