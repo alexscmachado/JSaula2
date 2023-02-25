@@ -7,8 +7,71 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main4.js'></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <header>
+        <h1> Notas bimestrais</h1>
+
+        <p> Digite aqui as notas bimestrais:</p>
+
+    </header>
+
+    <main>
+        <div class="notas">
+
+            <label for="n1"> 1º Bimestre:
+             <input type="text" class="notab1" id="n1">
+            </label> 
+          
+            <label for="n2"> 2º Bimestre:
+             <input type="text" class="notab1" id="n2">
+            </label> 
+         
+            <label for="n3"> 3º Bimestre:
+             <input type="text" class="notab1" id="n3">
+            </label> 
+         
+            <label for="n4"> 4º Bimestre:
+             <input type="text" class="notab1" id="n4">
+            </label> 
+
+            <label for="nfator"> Quantidade de bimestres avaliados: 
+                <input type="text" class="fator" id="nfator">
+               </label> 
+         
+         </div>
+
+         <button id="calcMedia"> Calcular </button>
+
+         <div class="resultadoFinal">
+
+         </div>
+
+         <div class="recuperacao">
+
+            <p> Digite aqui as notas bimestrais:</p>
+           
+            <label for="nrecuperacao"> Nota da recuperação: 
+                <input type="text" class="fator" id="nrecuperacao">
+               </label> 
+         </div>
+
+         <button id="calcMediaRecuperacao"> Calcular </button>
+
+         <p> OBS: A média final da recuperação é obtida através do soma entre a média bimestral e a nota da recuperação, dividido por 2. Caso o aluno obtenha nota maior ou igual a 5 o aluno está aprovado.</p>
+
+           <div class="resultadoRecuperacaoFinal">
+
+            
+           </div>
+    </main>
     
+   
+
+
+
+
 </body>
 </html>

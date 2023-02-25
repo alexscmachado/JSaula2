@@ -5,11 +5,11 @@ let usuario = true
 
 switch (usuario) {
 
-    case usuario1 == "":
+    case usuario1 == "Alex":
 
-        alert("Recarregue a página. Você digitou um usuário inválido.")
+        alert(" Você digitou um usuário válido.")
 
-        break;
+        
 
 
     case usuario1 != "":
