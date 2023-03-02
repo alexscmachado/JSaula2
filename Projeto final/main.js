@@ -49,7 +49,7 @@ const titulo4 = new livro ("A cura pelos cristais  ", "Hare Hare Baba","  60,00"
 
 function compra (){
     if (busca == 1){
-        
+        let gol= 0
     alert(  (titulo1.escolha()))
     } else if (busca == 2){
     console.log (titulo2.escolha())
